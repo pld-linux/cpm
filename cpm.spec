@@ -1,5 +1,5 @@
 Summary:	cpm - check for network interfaces in promiscuous mode
-Summary(pl):	cpm - znajd¼ interfejsy sieciowe w trybie promiscuous
+Summary(pl):	cpm - szukanie interfejsów sieciowych w trybie promiscuous
 Name:		cpm
 Version:	1.2
 Release:	1
@@ -8,7 +8,6 @@ Group:		Networking/Admin
 Source0:	ftp://coast.cs.purdue.edu/pub/tools/unix/sysutils/%{name}/%{name}.%{version}.tar.gz
 # Source0-md5:	e689ca1c663e4c643887245f41f13a84
 Patch0:		%{name}-include.patch
-BuildRequires:	glibc-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -19,9 +18,9 @@ any of the network interfaces are currently in promiscuous mode.
 
 %description -l pl
 Cpm sprawdza, czy jaki¶ interfejs sieciowy jest w trybie promiscuous.
-U¿ywa standardowych wywo³añ systemowych socket(2) i ioctl(2) do wyszukania
-skonfigurowanych w systemie interfejsów sieciowych oraz do sprawdzenia,
-czy które¶ z nich jest aktualnie w trybie promiscuous.
+U¿ywa standardowych wywo³añ systemowych socket(2) i ioctl(2) do
+wyszukania skonfigurowanych w systemie interfejsów sieciowych oraz do
+sprawdzenia, czy które¶ z nich jest aktualnie w trybie promiscuous.
 
 %prep
 %setup -q -n %{name}.%{version}
@@ -32,7 +31,7 @@ czy które¶ z nich jest aktualnie w trybie promiscuous.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%_bindir,%_mandir/man1}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 
 install cpm   $RPM_BUILD_ROOT%{_bindir}
 install cpm.1 $RPM_BUILD_ROOT%{_mandir}/man1
