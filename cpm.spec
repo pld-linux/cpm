@@ -2,7 +2,7 @@ Summary:	cpm - check for network interfaces in promiscuous mode
 Summary(pl):	cpm - szukanie interfejsów sieciowych w trybie promiscuous
 Name:		cpm
 Version:	1.2
-Release:	1
+Release:	2
 License:	custom (free)
 Group:		Networking/Admin
 Source0:	ftp://coast.cs.purdue.edu/pub/tools/unix/sysutils/%{name}/%{name}.%{version}.tar.gz
