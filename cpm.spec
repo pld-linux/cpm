@@ -12,7 +12,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Cpm checks whether any network interface on a host is in promiscuous
-mode.  Cpm uses standard BSD Unix socket(2) and ioctl(2) system calls to
+mode. Cpm uses standard BSD Unix socket(2) and ioctl(2) system calls to
 determine a system's configured network interfaces, and to check whether
 any of the network interfaces are currently in promiscuous mode.
 
@@ -33,8 +33,8 @@ sprawdzenia, czy które¶ z nich jest aktualnie w trybie promiscuous.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 
-install cpm   $RPM_BUILD_ROOT%{_bindir}
-install cpm.1 $RPM_BUILD_ROOT%{_mandir}/man1
+install cpm	$RPM_BUILD_ROOT%{_bindir}
+install cpm.1	$RPM_BUILD_ROOT%{_mandir}/man1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
