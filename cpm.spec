@@ -6,6 +6,7 @@ Release:	1
 License:	custom (free)
 Group:		Networking/Admin
 Source0:	ftp://coast.cs.purdue.edu/pub/tools/unix/sysutils/%{name}/%{name}.%{version}.tar.gz
+# Source0-md5:	e689ca1c663e4c643887245f41f13a84
 Patch0:		%{name}-include.patch
 BuildRequires:	glibc-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
