@@ -1,5 +1,5 @@
 Summary:	cpm - check for network interfaces in promiscuous mode
-Summary(pl):	cpm - szukanie interfejsÛw sieciowych w trybie promiscuous
+Summary(pl.UTF-8):   cpm - szukanie interfejs√≥w sieciowych w trybie promiscuous
 Name:		cpm
 Version:	1.2
 Release:	2
@@ -16,11 +16,11 @@ mode. Cpm uses standard BSD Unix socket(2) and ioctl(2) system calls to
 determine a system's configured network interfaces, and to check whether
 any of the network interfaces are currently in promiscuous mode.
 
-%description -l pl
-Cpm sprawdza, czy jaki∂ interfejs sieciowy jest w trybie promiscuous.
-Uøywa standardowych wywo≥aÒ systemowych socket(2) i ioctl(2) do
-wyszukania skonfigurowanych w systemie interfejsÛw sieciowych oraz do
-sprawdzenia, czy ktÛre∂ z nich jest aktualnie w trybie promiscuous.
+%description -l pl.UTF-8
+Cpm sprawdza, czy jaki≈õ interfejs sieciowy jest w trybie promiscuous.
+U≈ºywa standardowych wywo≈Ça≈Ñ systemowych socket(2) i ioctl(2) do
+wyszukania skonfigurowanych w systemie interfejs√≥w sieciowych oraz do
+sprawdzenia, czy kt√≥re≈õ z nich jest aktualnie w trybie promiscuous.
 
 %prep
 %setup -q -n %{name}.%{version}
