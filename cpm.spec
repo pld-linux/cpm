@@ -24,7 +24,7 @@ sprawdzenia, czy któreś z nich jest aktualnie w trybie promiscuous.
 
 %prep
 %setup -q -n %{name}.%{version}
-%patch0 -p0
+%patch -P0 -p0
 
 %build
 %{__cc} cpm.c -o cpm %{rpmcflags}
